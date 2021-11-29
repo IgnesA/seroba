@@ -7,7 +7,7 @@ RUN apt-get update -qq && apt-get install -y ariba python3-pip git wget unzip zl
 
 # Get the latest code from github and install
 RUN git clone https://github.com/sanger-pathogens/ariba.git && cd ariba && python3 setup.py install
-RUN git clone https://github.com/sanger-pathogens/seroba
+RUN git clone https://github.com/IgnesA/seroba.git
 RUN cd seroba  && ./install_dependencies.sh
 ENV PATH /seroba/build:$PATH
 RUN export PATH
