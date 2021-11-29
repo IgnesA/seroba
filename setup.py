@@ -16,7 +16,7 @@ setup(
         'ariba >= 2.9.1',
         'pymummer==0.10.3',
         'PyYAML>=3.12',
-        'biopython>=1.68',
+        'biopython<=1.77',
         'pyfastaq>=3.15.0'
     ],
     license='GPLv3',
